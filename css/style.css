@@ -1,0 +1,209 @@
+/* ESTILOS GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: rgb(124, 80, 80);
+}
+header .btn-contato button,
+.hero-site button {
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.catalogo {
+    display: flex;
+}
+/* ESTILO DO HEADER */
+header {
+    width: 100%;
+    padding: 40px 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 40px;
+}
+
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.menu-desktop nav a:hover {
+    transform: scale(1.05);
+}
+header .btn-contato button {
+    width: 140px;
+    height: 50px;
+}
+
+header .btn-contato button:hover,
+.hero-site button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ESTILO DO HERO */
+
+section.hero-site {
+    height: 100vh;
+    background-image: url(../images/bg-inicio-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-site .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1 {
+    font-size: 4em;
+}
+.hero-site .txt-hero h1 {
+    line-height: 70px;
+    font-weight: 200;
+}
+
+.hero-site .txt-hero h1 span {
+    font-weight: 800;
+}
+
+.hero-site .txt-hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/* ESTILOS DA SECTION VANTAGENS */
+
+section.vantagens {
+    background-color: #e3e3e3;
+    padding: 40px;
+}
+section.vantagens .catalogo {
+    display: flex;
+    align-items: center;
+}
+
+section.vantagens .interface .catalogo {
+    padding: 30px 4%;
+    transition: 0.5s;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+section.vantagens .catalogo:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.522);
+    transform: scale(1.02);
+}
+
+section.vantagens .interface .catalogo .img-catalogo img {
+    width: 400px;
+    margin-left: 55px;
+}
+section.vantagens .interface .catalogo .img-catalogo-invert img {
+    width: 400px;
+    margin-right: 80px;
+}
+
+section.vantagens .interface .catalogo .txt-catalogo h2 {
+    font-weight: 200;
+    line-height: 50px;
+    font-size: 3em;
+}
+
+section.vantagens .interface .catalogo .txt-catalogo h2 span {
+    font-weight: 800;
+}
+
+/* ESTILOS NA SECTION CONTATOS */
+section.contatos {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+section.contatos .interface {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.contatos .txt-contato h3 {
+    font-size: 2.5em;
+    font-weight: 300;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+section.contatos .txt-contato h3 span {
+    font-weight: 800;
+}
+
+.contatos .icons-contato a {
+    text-decoration: none;
+}
+
+.contatos .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 340px;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contatos .icons-contato button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.contatos .icons-contato button i {
+    font-size: 22px;
+}
