@@ -1,0 +1,189 @@
+@media screen and (max-width: 1000px) {
+    * {
+        p {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    .hero-site .txt-hero p {
+        font-size: 25px;
+        font-weight: 300;
+        margin: 20px 0;
+    }
+    header .menu-desktop,
+    header .btn-contato {
+        display: none;
+    }
+
+    section.como-funciona .txt-como-funciona {
+        padding: 0 1%;
+    }
+
+    section.como-funciona .interface .txt-como-funciona h1 {
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+
+    section.como-funciona .box-como-funciona .box img {
+        width: auto;
+        height: 100px;
+    }
+    section.como-funciona {
+        height: 730px;
+        padding: 40px 0;
+    }
+
+    section.vantagens .interface .catalogo .img-catalogo img {
+        width: 350px;
+        margin-left: 30px;
+    }
+
+    section.vantagens .interface .catalogo .img-catalogo-invert img {
+        width: 350px;
+        margin-right: 55px;
+    }
+
+    section.vantagens .interface .catalogo .txt-catalogo h2 {
+        line-height: 30px;
+        font-size: 2em;
+    }
+    section.vantagens .interface .catalogo-inv .txt-catalogo h2 {
+        line-height: 30px;
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    /* ESTILOS DO HERO-SITE */
+    .hero-site .txt-hero h1 {
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+
+    .hero-site .txt-hero p {
+        font-size: 15px;
+    }
+
+    .hero-site button {
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+    }
+    /* ESTILOS DO HERO-SITE */
+
+    /* ESTILOS DA SECTION VANTAGENS */
+    section.vantagens .catalogo {
+        flex-direction: column;
+        text-align: center;
+    }
+    section.vantagens .catalogo-inv {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.vantagens .interface .catalogo .img-catalogo img {
+        width: 250px;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    section.vantagens .interface .catalogo-inv .img-catalogo img {
+        width: 250px;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    section.vantagens .interface .catalogo-inv {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section.vantagens .interface .catalogo-inv .img-catalogo-invert img {
+        width: 250px;
+        margin: auto;
+    }
+    /* ESTILOS DA SECTION VANTAGENS */
+
+    /* ESTILOS DA SECTION CONTATOS */
+
+    .contatos .icons-contato button {
+        justify-content: center;
+        width: 385px;
+    }
+    .contatos .icons-contato button i {
+        margin-right: 15px;
+    }
+    section.contatos .interface {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    section.contatos .interface .txt-contato {
+        margin-bottom: 20px;
+    }
+    /* FIM ESTILOS DA SECTION CONTATOS */
+
+    /* FIM ESTILOS DA SECTION (COMO-FUNCIONA) */
+    section.como-funciona {
+        height: 1360px;
+        padding: 20px 0;
+    }
+
+    section.como-funciona .interface {
+        display: block;
+    }
+
+    .como-funciona .txt-como-funciona {
+        height: 120px;
+        margin-bottom: 40px;
+    }
+
+    section.como-funciona .interface .txt-como-funciona h1 {
+        font-size: 3.5em;
+        font-weight: 300;
+        line-height: 55px;
+        position: static;
+
+        text-align: center;
+    }
+
+    section.como-funciona .interface .txt-como-funciona h1 span {
+        font-weight: 700;
+    }
+
+    section.como-funciona .interface .box-como-funciona img {
+        width: 120px;
+        margin: auto;
+    }
+
+    section.como-funciona .interface .box-como-funciona .box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+
+        border: 2px solid black;
+        padding: 20px;
+    }
+
+    section.como-funciona .interface .box-como-funciona {
+        margin: auto;
+        max-width: 360px;
+        height: 120px;
+    }
+
+    section.como-funciona .interface .box-como-funciona .box {
+        display: flex;
+    }
+
+    section.como-funciona .interface .box-como-funciona .box .txt-box h2 {
+        text-align: center;
+    }
+    section.como-funciona .interface .box-como-funciona .box .txt-box p {
+        text-align: center;
+    }
+
+    /* FIM ESTILOS DA SECTION (COMO-FUNCIONA) */
+}

@@ -9,13 +9,15 @@
 .interface {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 4%;
 }
 
 body {
-    background-color: rgb(124, 80, 80);
+    background-color: rgb(255, 255, 255);
 }
 header .btn-contato button,
-.hero-site button {
+.hero-site button,
+section.parallax .txt-parallax a button:hover {
     font-size: 18px;
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255);
@@ -33,6 +35,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+
+    transition: 0.5s;
+    z-index: 99;
 }
 
 header .interface {
@@ -40,6 +45,40 @@ header .interface {
     justify-content: space-between;
     align-items: center;
 }
+
+/* ESTILO DO MENU DINAMICO */
+
+header .logo img.logo-preta {
+    display: none;
+}
+header.rolar {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.795);
+}
+
+header.rolar .menu-desktop nav ul li a {
+    color: #000;
+}
+
+header.rolar .btn-contato button {
+    border: 1px solid black;
+    color: #000;
+}
+
+header.rolar .btn-contato button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+header.rolar .logo .logo-branca {
+    display: none;
+}
+
+header.rolar .logo .logo-preta {
+    display: block;
+}
+/* ------------------------- */
 
 header .logo img {
     max-width: 40px;
@@ -70,7 +109,8 @@ header .btn-contato button {
 }
 
 header .btn-contato button:hover,
-.hero-site button:hover {
+.hero-site button:hover,
+section.parallax .txt-parallax a button:hover {
     background-color: #fff;
     color: #000;
 }
@@ -119,10 +159,14 @@ section.hero-site {
 /* ESTILOS DA SECTION VANTAGENS */
 
 section.vantagens {
-    background-color: #e3e3e3;
+    background-color: #eeeeee;
     padding: 40px;
 }
 section.vantagens .catalogo {
+    display: flex;
+    align-items: center;
+}
+section.vantagens .catalogo-inv {
     display: flex;
     align-items: center;
 }
@@ -133,7 +177,15 @@ section.vantagens .interface .catalogo {
     border-radius: 20px;
     margin: 15px 0;
 }
-section.vantagens .catalogo:hover {
+section.vantagens .interface .catalogo-inv {
+    padding: 30px 4%;
+    transition: 0.5s;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
+section.vantagens .catalogo:hover,
+section.vantagens .catalogo-inv:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.522);
     transform: scale(1.02);
 }
@@ -142,7 +194,7 @@ section.vantagens .interface .catalogo .img-catalogo img {
     width: 400px;
     margin-left: 55px;
 }
-section.vantagens .interface .catalogo .img-catalogo-invert img {
+section.vantagens .interface .catalogo-inv .img-catalogo-invert img {
     width: 400px;
     margin-right: 80px;
 }
@@ -152,8 +204,16 @@ section.vantagens .interface .catalogo .txt-catalogo h2 {
     line-height: 50px;
     font-size: 3em;
 }
+section.vantagens .interface .catalogo-inv .txt-catalogo h2 {
+    font-weight: 200;
+    line-height: 50px;
+    font-size: 3em;
+}
 
 section.vantagens .interface .catalogo .txt-catalogo h2 span {
+    font-weight: 800;
+}
+section.vantagens .interface .catalogo-inv .txt-catalogo h2 span {
     font-weight: 800;
 }
 
@@ -206,4 +266,157 @@ section.contatos .txt-contato h3 span {
 
 .contatos .icons-contato button i {
     font-size: 22px;
+}
+
+/* ESTILOS DA SECTION PARALLAX */
+section.parallax {
+    background-image: url(../images/hotel-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+section.parallax .fundo-desfoque {
+    width: 100%;
+    height: 100%;
+    background-color: #000000d3;
+}
+
+section.parallax .txt-parallax {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+section.parallax .txt-parallax h3 {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+section.parallax .txt-parallax h3 span {
+    font-weight: 800;
+}
+
+section.parallax .txt-parallax p {
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+section.parallax .txt-parallax a button {
+    background-color: transparent;
+    font-size: 1em;
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    width: 190px;
+    height: 50px;
+}
+
+/* ESTILO DA SECTION (COMO-FUNCIONA) */
+
+section.como-funciona {
+    background-color: #eeeeee;
+
+    padding: 80px 0;
+}
+
+section.como-funciona .interface {
+    display: flex;
+    justify-content: space-between;
+}
+
+.como-funciona .txt-como-funciona {
+    height: 550px;
+}
+
+section.como-funciona .interface .txt-como-funciona h1 {
+    font-size: 3.5em;
+    font-weight: 300;
+    line-height: 55px;
+    position: sticky;
+    top: 50%;
+}
+
+section.como-funciona .interface .txt-como-funciona h1 span {
+    font-weight: 700;
+}
+
+section.como-funciona .interface .box-como-funciona img {
+    width: 120px;
+    margin-right: 15px;
+}
+
+section.como-funciona .interface .box-como-funciona .box {
+    margin-bottom: 40px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+section.como-funciona .interface .box-como-funciona {
+    width: 600px;
+    height: 120px;
+}
+
+section.como-funciona .interface .box-como-funciona .box {
+    display: flex;
+}
+
+section.como-funciona .interface .box-como-funciona .box .txt-box h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+section.como-funciona .interface .box-como-funciona .box .txt-box h2 span {
+    font-weight: 300;
+}
+
+/*  ESTILOS NO HTML FOOTER */
+
+footer {
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .contatos-footer button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+footer .contatos-footer button:hover {
+    background-color: white;
+    color: #000;
+}
+
+footer .txt-contatos-footer {
+    margin: 20px 0;
+}
+
+footer .txt-contatos-footer a {
+    color: white;
+    margin: 0 15px;
+}
+
+footer .paragrafo-footer {
+    border-top: 2px solid white;
+    padding-top: 10px;
+}
+
+footer .paragrafo-footer p {
+    color: white;
 }
