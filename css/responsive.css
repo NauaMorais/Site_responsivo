@@ -4,6 +4,9 @@
             font-size: 20px;
             font-weight: 400;
         }
+        header .btn-menu-mob {
+            display: block;
+        }
     }
     .hero-site .txt-hero p {
         font-size: 25px;
@@ -55,6 +58,10 @@
 
 @media screen and (max-width: 885px) {
     /* ESTILOS DO HERO-SITE */
+    header .btn-menu-mob {
+        display: block;
+    }
+
     .hero-site .txt-hero h1 {
         font-size: 2.5em;
         line-height: 40px;
